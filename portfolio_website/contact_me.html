@@ -195,9 +195,28 @@
             <input type="submit" value="Submit">
         </form>
     </h3>
-    </td>
+
+
     </body>
     <footer>
         <p>© 2023 Vannputhika. All Rights Reserved.</p>
     </footer>
+    <script>
+        document.getElementById('commentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get the user's input
+            const firstName = document.getElementById('fname').value;
+            const lastName = document.getElementById('lname').value;
+            const age = document.getElementById('age').value;
+            const gender = document.querySelector('input[name="gender"]:checked').value;
+            const comment = document.getElementById('cment').value;
+
+            // Create a comment string
+            const commentString = `First Name: ${firstName}<br>Last Name: ${lastName}<br>Age: ${age}<br>Gender: ${gender}<br>Comment: ${comment}`;
+
+            // Display the comment in the result div
+            document.getElementById('commentResult').innerHTML = commentString;
+        });
+    </script>
 </html>
