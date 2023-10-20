@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: white;
+                margin: 0;
+                padding: 0;
+            }
+            header, main, aside, footer {
+                background-color: #ffbd5e;
+                margin: 10px;
+                padding: 15px;
+                border-radius: 5px;
+            }
+            h1, h3 {
+                font-size: 24px;
+                background-color: #ffbd5e;
+                margin: 10px 10px 10px 10px;
+                padding: 25px 25px 25px 25px;
+                border-radius: 5px;
+            }
+
+            h3 {
+                font-size: 15px;
+            }
+
+            ul {
+                font-weight: bold;
+                position: absolute;
+                top: 12px;
+                right: 0;
+                text-align: right;
+                background-color: #ffbd5e;
+                font-size: 15px;
+                margin: 15px 10px 15px 10px;
+                padding: 15px 15px 15px 15px;
+                border-radius: 5px;
+                list-style-type: none;
+            }
+
+            li {
+                display: inline;
+                margin-right: 20px;
+            }
+
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #ffbd5e;
+                margin: 10px;
+                padding: 15px;
+                border-radius: 5px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #333;
+            }
+            table {
+                border-collapse: collapse;
+                margin: 10px 10px 10px 10px;
+                padding: 15px 15px 15px 15px;
+                background-color: white;
+                border-radius: 5px;
+            }
+            table td {
+                margin: 10px 10px 10px 10px;
+                padding: 15px 15px 15px 15px;
+            }
+            table img {
+                margin: 10px 10px 10px 10px;
+                border-radius: 10px;
+            }
+            table tr {
+                font-size: 15px;
+                vertical-align: top;
+            }
+            footer {
+                font-size: 15px;
+                padding: 5px 5px 5px 5px;
+            }
+            .social-media-container {
+                display: flex;
+                justify-content: space-around;
+                margin: 10px 10px 10px 10px;
+                padding: 15px 15px 15px 15px;
+            }
+
+            .social-media-item {
+                background-color: #ffbd5e;
+                padding: 15px;
+                border-radius: 5px;
+                text-align: center;
+                text-decoration: none;
+                color: #333;
+                transition: transform 0.2s;
+                display: inline-block;
+            }
+
+            .social-media-item:hover {
+                transform: scale(1.1);
+            }
+
+            .social-media-item img {
+                width: 40px;
+                border-radius: 50%;
+            }
+
+            .area {
+                font-size: 35px;
+                margin: 10px 10px 10px 10px;
+                padding: 15px 15px 15px 15px;
+            }
+
+            @keyframes wave {
+                0% {
+                    transform: translateX(0);
+                }
+                50% {
+                    transform: translateX(20px);
+                }
+                100% {
+                    transform: translateX(0);
+                }
+            }
+
+            @media screen and (max-width: 500px) {
+                header {
+                    flex-direction: column;
+                }
+                ul {
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    text-align: right;
+                    margin: 0;
+                    padding: 0;
+                }
+                li {
+                    display: block;
+                    margin: 0;
+                }
+            }
+            form {
+                text-align: left;
+                font-size: 15px;
+                padding: 5px 5px 5px 5px;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <title>vannputhika</title>
+        <h1> Welcome to Vannputhika's World</h1>
+    </head>
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about_me.html">About Me</a></li>
+            <li><a href="contact_me.html">Contact Me</a></li>
+        </ul>
+    </nav>
+    <body>
+    <h2 class="area">📱 Find Me On Social Media</h2>
+    <div class="social-media-container">
+        <a href="https://www.facebook.com/vnnputhika" class="social-media-item">
+            <img src="images/facebook_icon.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/vannputhika/" class="social-media-item">
+            <img src="images/instagram_icon.png" alt="Instagram">
+        </a>
+        <a href="https://linkedin.com/vannputhika" class="social-media-item">
+            <img src="images/linkedIn_icon.png" alt="LinkedIn">
+        </a>
+    </div>
+
+    <h3> Send Me a Comment!
+        <br><br>
+        <form action="/action_page.php">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age"><br><br>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+            <label for="cment">Comment:</label><br>
+            <input type="text" id="cment" cment="comment"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </h3>
+    </td>
+    </body>
+    <footer>
+        <p>© 2023 Vannputhika. All Rights Reserved.</p>
+    </footer>
+</html>

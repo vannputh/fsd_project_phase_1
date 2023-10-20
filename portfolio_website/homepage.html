@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header, main, aside, footer {
+            background-color: #ffbd5e;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        h1, h3 {
+            font-size: 24px;
+            background-color: #ffbd5e;
+            margin: 10px 10px 10px 10px;
+            padding: 25px 25px 25px 25px;
+            border-radius: 5px;
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+
+        ul {
+            font-weight: bold;
+            position: absolute;
+            top: 12px;
+            right: 0;
+            text-align: right;
+            background-color: #ffbd5e;
+            font-size: 15px;
+            margin: 15px 10px 15px 10px;
+            padding: 15px 15px 15px 15px;
+            border-radius: 5px;
+            list-style-type: none;
+        }
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffbd5e;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 10px 10px 10px 10px;
+            padding: 15px 15px 15px 15px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        table td {
+            margin: 10px 10px 10px 10px;
+            padding: 15px 15px 15px 15px;
+        }
+        table img {
+            margin: 10px 10px 10px 10px;
+            border-radius: 10px;
+        }
+        table tr {
+            font-size: 15px;
+            vertical-align: top;
+        }
+        .hello {
+            font-size: 35px;
+            animation: wave 2s ease-in-out infinite;
+        }
+        .bio {
+            font-size: 20px;
+        }
+        .area {
+            font-size: 35px;
+            margin: 10px 10px 10px 10px;
+            padding: 15px 15px 15px 15px;
+        }
+        .skills-container, .achievements {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .achievements .ttl{
+            margin: 0;
+            margin-left: 15px;
+            padding: 0;
+        }
+        #ach1, #ach2{
+            background-color: #ffbd5e;
+            margin: 10px 10px 10px 10px;
+            padding: 15px 2px 0px 2px;
+            border-radius: 5px;
+        }
+        .desc {
+            font-weight: normal;
+            background-color: #ffefdb;
+            border-radius: 5px;
+            margin: 10px 10px 10px 10px;
+            padding: 15px 15px 15px 15px;
+            clear: both;
+            display: block;
+
+        }
+        .ttl {
+            font-size: 21px;
+        }
+        footer {
+            font-size: 15px;
+            padding: 5px 5px 5px 5px;
+        }
+
+        @keyframes wave {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(20px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            header {
+                flex-direction: column;
+            }
+            ul {
+                position: relative;
+                top: 0;
+                right: 0;
+                text-align: right;
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                display: block;
+                margin: 0;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Vannputhika</title>
+</head>
+<body>
+
+<div>
+    <h1>Vannputhika's World</h1>
+    <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about_me.html">About Me</a></li>
+        <li><a href="contact_me.html">Contact Me</a></li>
+    </ul>
+</div>
+<table id="intro">
+    <tr>
+        <td>
+            <img id="profile" src="images/profile_pic.jpg" height="378.6" width="379" alt="">
+        </td>
+        <td>
+            <div class="hello">
+                <h2>👋 Hello! I'm <em>Suon Vannputhika</em></h2>
+            </div>
+            <div class="bio">
+                <p>📚 Bachelors of Engineering in Software Engineering <br> <a href="http://kit.edu.kh">📍 Kirirom Institute of Technology</a> <br><br> I'm passionate about coding, problem-solving, and learning new things. I'm also interested in competitive programming, hackathons, and open-source projects. I'm excited to grow in the field and make a positive impact.</p>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<h2 class="area"> 📊 Skills </h2>
+<div class="skills-container">
+    <h3 class="ttl">🐍 Python</h3>
+    <h3 class="ttl">📈 SQL</h3>
+    <h3 class="ttl">👨‍💻 Research</h3>
+    <h3 class="ttl">🙋‍♂️ Leadership</h3>
+    <h3 class="ttl">🗣️ Communication</h3>
+</div>
+<br>
+
+<h2 class="area">🏆 Achievements </h2>
+<div class="achievements">
+    <div id="ach1">
+    <h3 class="ttl">SmartSpart+ Cohort 1</h3>
+    <p class="desc"> First place winner as the team pitcher, presenting "LetterHunter" an educational game for kids to learn Khmer.</p>
+    </div>
+    <div id="ach2">
+    <h3 class="ttl">Reverse Innovation Cohort 3</h3>
+    <p class="desc">Top 15 placement in the competition, pitching a solution for digital ID implementation in Cambodia.</p>
+    </div>
+</div>
+</body>
+<footer>
+    <p>© 2023 Vannputhika. All Rights Reserved.</p>
+</footer>
+</html>
